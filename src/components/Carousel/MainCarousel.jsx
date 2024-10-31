@@ -15,7 +15,7 @@ const MainCarousel = () => (
     items={items}
     disableButtonsControls
     autoPlay
-    autoPlayInterval={1500}
+    autoPlayInterval={1200}
     infinite
     className='-z-50'
     

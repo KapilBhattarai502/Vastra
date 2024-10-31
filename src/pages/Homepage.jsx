@@ -1,5 +1,7 @@
 import React from "react";
 import MainCarousel from "../components/Carousel/MainCarousel";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 
 
@@ -9,11 +11,14 @@ const Homepage = () => {
  
   return (
     <>
-    <div>
+    <Header/>
+    <div className="mt-20">
     <MainCarousel/>
     
   
     </div>
+    <Footer/>
+   
 
     
       

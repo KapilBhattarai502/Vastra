@@ -1,9 +1,6 @@
 export const mainCarouselData=[{
     image:"https://overlaysnow.com/cdn/shop/files/v2.webp?v=1729770361&width=2000",
     path:"/women/clothing/lenga_choli"
-},{
-    image:"https://overlaysnow.com/cdn/shop/files/Overlays_Banners_web_copy.webp?v=1729614648&width=2000",
-    path:'/women/clothing/women_dress'
 },
 
 {

@@ -6,15 +6,17 @@ import PersonIcon from '@mui/icons-material/Person';
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate=useNavigate()
   return (
     <>
-      <div className="flex justify-between py-5 items-center px-5">
-        <div className="flex gap-2 cursor-pointer">
-          <h4>Men</h4>
-          <h4>Women</h4>
+      <div className="flex justify-between py-5 items-center px-5 fixed top-0 left-0 w-full bg-white z-50">
+        <div className="flex gap-5 cursor-pointer">
+          <h4 onClick={()=>{navigate("/clothes/men")}}>Men</h4>
+          <h4 onClick={()=>{navigate("/clothes/women")}}>Women</h4>
+         
         </div>
         <div>
-          <h1 className="text-2xl font-bold">Vastra</h1>
+          <h1 className="text-2xl font-bold cursor-pointer" onClick={()=>{navigate("/")}}>Vastra</h1>
         </div>
         <div className="flex gap-3 cursor-pointer">
           <SearchIcon sx={{ fontSize: "2rem", color: "#333" }} />
