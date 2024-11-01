@@ -8,7 +8,7 @@ import Loginpage from "./pages/Loginpage";
 import ProtectedRoute from "./ProtectedRoute";
 import { AuthProvider } from "./AuthContext/AuthContext";
 import FashionDetails from "./pages/FashionDetails";
-
+import Cart from "./pages/Cart";
 
 const App = () => {
   return (
@@ -27,12 +27,11 @@ const App = () => {
               }
             >
               <Route path="men" element={<MenFashion />} />
-              <Route path="men/:id" element={<FashionDetails/>} />
+              <Route path="men/:id" element={<FashionDetails />} />
               <Route path="women" element={<WomenFashion />} />
-              
-
-
+              <Route path="cart" element={<Cart/>}/>
             </Route>
+           
             <Route path="login" element={<Loginpage />} />
           </Routes>
         </BrowserRouter>
